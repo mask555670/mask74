@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaskFit - Офлайн</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            color: #2B3A67;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2B3A67;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #FF6B6B;
+        }
+        button {
+            background-color: #2B3A67;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #3D4E89;
+        }
+        .features {
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .features h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2B3A67;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4ECDC4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📶</div>
+        <h1>Вы офлайн</h1>
+        <p>
+            Похоже, что у вас нет подключения к интернету. Не волнуйтесь, вы все еще можете использовать основные функции приложения.
+        </p>
+        <button onclick="window.location.reload()">Попробовать снова</button>
+        
+        <div class="features">
+            <h2>Что доступно офлайн:</h2>
+            <ul>
+                <li>Просмотр сохраненных тренировок</li>
+                <li>Добавление новых тренировок</li>
+                <li>Просмотр прогресса</li>
+                <li>Доступ к профилю</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Проверка подключения к интернету
+        window.addEventListener('online', () => {
+            window.location.reload();
+        });
+    </script>
+</body>
+</html> 
