@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+<<<<<<< HEAD
     "build": "npm run generate-icons && tsc && vite build",
     "generate-icons": "node scripts/generate-icons.js",
+=======
+    "build": "tsc && vite build",
+>>>>>>> 54ad1dcb5d517545a930d7c1834724e8552f57cc
     "lint": "eslint . --ext ts,tsx --report-unused-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -31,9 +35,16 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+<<<<<<< HEAD
     "sharp": "^0.33.2",
+=======
+>>>>>>> 54ad1dcb5d517545a930d7c1834724e8552f57cc
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
     "vite-plugin-pwa": "^1.0.0"
   }
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 54ad1dcb5d517545a930d7c1834724e8552f57cc
